@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
     background-color: #3C3C3C;
     color: #FFFFFF;
-    font-family: 'Minecraft', sans-serif;
+    font-family: 'Press Start 2P', sans-serif;
     text-align: center;
     padding: 50px;
 }
 h1 {
     color: #00FF00;
+    font-size: 24px;
 }
 label {
     color: #FFD700;
+    font-size: 18px;
 }
 input[type="number"] {
     background-color: #555555;
@@ -17,6 +21,7 @@ input[type="number"] {
     border: 1px solid #00FF00;
     padding: 5px;
     margin: 10px;
+    width: 100px;
 }
 input[type="range"] {
     width: 200px;
@@ -28,6 +33,7 @@ button {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    font-size: 16px;
 }
 button:hover {
     background-color: #32CD32;

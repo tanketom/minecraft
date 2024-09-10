@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>The Unoffical Dnoate Minecraft Tree Calculator</title>
+    <title>The (Unofficial) Dnoate Minecraft Tree Calculator</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>The Unoffical Dnoate Minecraft Tree Calculator</h1>
+    <h1>The (Unofficial) Dnoate Minecraft Tree Calculator</h1>
     <label for="planks">Number of Acacia Planks:</label>
-    <input type="number" id="planks" name="planks" oninput="updatePlanksSlider()" min="0">
-    <input type="range" id="planksSlider" name="planksSlider" oninput="updatePlanksInput()" min="0" max="100">
+    <input type="number" id="planks" name="planks" oninput="updatePlanksSlider()" min="0" max="2000">
+    <input type="range" id="planksSlider" name="planksSlider" oninput="updatePlanksInput()" min="0" max="2000">
     <br>
     <label for="slabs">Number of Acacia Slabs:</label>
-    <input type="number" id="slabs" name="slabs" oninput="updateSlabsSlider()" min="0">
-    <input type="range" id="slabsSlider" name="slabsSlider" oninput="updateSlabsInput()" min="0" max="100">
+    <input type="number" id="slabs" name="slabs" oninput="updateSlabsSlider()" min="0" max="2000">
+    <input type="range" id="slabsSlider" name="slabsSlider" oninput="updateSlabsInput()" min="0" max="2000">
     <br>
-    <button onclick="calculate()">Calculate!</button>
+    <button onclick="calculate()">Calculate</button>
     <p id="result"></p>
 
     <script src="script.js"></script>
