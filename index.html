@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>The Unofficial Dnoate Minecraft Tree Cutting Calculator</title>
+    <title>The Unoffical Dnoate Minecraft Tree Calculator</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>The Unofficial Dnoate Minecraft Tree Cutting Calculator</h1>
+    <h1>The Unoffical Dnoate Minecraft Tree Calculator</h1>
     <label for="planks">Number of Acacia Planks:</label>
-    <input type="number" id="planks" name="planks">
+    <input type="number" id="planks" name="planks" oninput="updatePlanksSlider()" min="0">
+    <input type="range" id="planksSlider" name="planksSlider" oninput="updatePlanksInput()" min="0" max="100">
     <br>
     <label for="slabs">Number of Acacia Slabs:</label>
-    <input type="number" id="slabs" name="slabs">
+    <input type="number" id="slabs" name="slabs" oninput="updateSlabsSlider()" min="0">
+    <input type="range" id="slabsSlider" name="slabsSlider" oninput="updateSlabsInput()" min="0" max="100">
     <br>
-    <button onclick="calculate()">Calculate</button>
+    <button onclick="calculate()">Calculate!</button>
     <p id="result"></p>
 
     <script src="script.js"></script>
