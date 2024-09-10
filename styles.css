@@ -57,3 +57,16 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+.tree-block {
+    width: 32px;
+    height: 32px;
+    margin: 2px;
+}
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+    input[type="number"], input[type="range"] {
+        width: 100%;
+    }
+}
