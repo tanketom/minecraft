@@ -11,5 +11,5 @@ function calculate() {
     // Calculate the number of stacks of tree blocks needed
     let stacks = Math.ceil(treeBlocks / 64);
 
-    document.getElementById('result').innerText = `You need to cut ${treeBlocks} tree blocks (${stacks} stacks) to get ${planks} planks and ${slabs} slabs.`;
+    document.getElementById('result').innerText = `You need to cut ${stacks} stacks (${treeBlocks} tree blocks) to get ${planks} planks and ${slabs} slabs.`;
 }
