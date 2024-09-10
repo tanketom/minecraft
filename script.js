@@ -35,15 +35,4 @@ function calculate() {
     let sticks = Math.floor(planks / 2) * 4;
 
     document.getElementById('result').innerText = `You need to cut ${stacks} stacks (${treeBlocks} tree blocks) to get ${planks} planks and ${slabs} slabs. You can also craft ${sticks} sticks.`;
-
-    // Resource efficiency tips
-    let tips = "Tip: Use slabs instead of full blocks to save resources!";
-    document.getElementById('tips').innerText = tips;
-
-    // Visual representation of tree blocks
-    let visual = "";
-    for (let i = 0; i < treeBlocks; i++) {
-        visual += '<img src="gfx/tree-block.png" alt="Tree Block" class="tree-block">';
-    }
-    document.getElementById('visual').innerHTML = visual;
 }
