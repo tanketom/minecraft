@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>The Official Dnoate Minecraft Tree Calculator</title>
+    <title>Minecraft Tree Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1></h1>
+    <h1>Minecraft Tree Calculator</h1>
     <label for="planks">Number of Planks:</label>
     <input type="number" id="planks" name="planks">
     <br>
@@ -14,22 +15,6 @@
     <button onclick="calculate()">Calculate</button>
     <p id="result"></p>
 
-    <script>
-        function calculate() {
-            let planks = parseInt(document.getElementById('planks').value) || 0;
-            let slabs = parseInt(document.getElementById('slabs').value) || 0;
-
-            // Calculate the total number of planks needed
-            let totalPlanks = planks + Math.ceil(slabs / 2);
-
-            // Calculate the number of tree blocks needed
-            let treeBlocks = Math.ceil(totalPlanks / 4);
-
-            // Calculate the number of stacks of tree blocks needed
-            let stacks = Math.ceil(treeBlocks / 64);
-
-            document.getElementById('result').innerText = `You need to cut ${stacks} stacks (${treeBlocks} tree blocks) to get ${planks} planks and ${slabs} slabs.`;
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
